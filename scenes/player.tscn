@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://brxn8py5pcp0w"]
+
+[ext_resource type="Texture2D" uid="uid://ci7h4k5nticlv" path="res://sprites/Tiny Platform Quest Characters.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://cxiefwwfe2qto" path="res://scenes/player.gd" id="1_g2els"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
+atlas = ExtResource("1_4flbx")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i3pqv"]
+atlas = ExtResource("1_4flbx")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hqtel"]
+atlas = ExtResource("1_4flbx")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sweqy"]
+atlas = ExtResource("1_4flbx")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2hs0m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_onrkg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i3pqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqtel")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sweqy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1jxqw"]
+
+[node name="player" type="CharacterBody2D" unique_id=65016743]
+script = ExtResource("1_g2els")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=983335489]
+z_index = 5
+position = Vector2(-1, -16)
+sprite_frames = SubResource("SpriteFrames_2hs0m")
+autoplay = "default"
+frame_progress = 0.842379
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=274729330]
+position = Vector2(0, -10)
+shape = SubResource("CircleShape2D_1jxqw")
