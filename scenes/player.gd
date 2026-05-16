@@ -10,6 +10,8 @@ const JUMP_FORCE = -650.0
 const AIR_CONTROL = 0.8
 const MAX_FALL_SPEED = 2000.0
 
+var spawn_position = Vector2.ZERO
+
 func _physics_process(delta):
 	var input_dir = Input.get_axis("ui_left", "ui_right")
 
@@ -41,3 +43,6 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, fric * delta)
 
 	move_and_slide()
+
+func _ready():
+	global_position = spawn_position
