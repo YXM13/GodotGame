@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://0teaep4i8a4j"]
+
+[ext_resource type="Texture2D" uid="uid://dhsbd5g2unwp4" path="res://sprites/portal.png" id="2_nhxoo"]
+
+[node name="goal_lvl_2" type="Area2D" unique_id=1364027633]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1941560990]
+texture = ExtResource("2_nhxoo")
+region_enabled = true
+region_rect = Rect2(22, 0, 22, 22)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

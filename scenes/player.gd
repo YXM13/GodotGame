@@ -5,9 +5,9 @@ const ACCELERATION = 3000.0
 const FRICTION = 4000.0
 
 const GRAVITY = 2000.0
-const JUMP_FORCE = -650.0
+const JUMP_FORCE = -700.0
 
-const AIR_CONTROL = 0.8
+const AIR_CONTROL = 1
 const MAX_FALL_SPEED = 2000.0
 
 var spawn_position = Vector2.ZERO
