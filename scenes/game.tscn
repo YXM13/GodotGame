@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://vojh1oqxksft" path="res://scenes/killzone.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://bn7g0s0xov5tn" path="res://scenes/goal_lvl_1.tscn" id="4_lbhrr"]
 [ext_resource type="Script" uid="uid://d343ogonn0f63" path="res://scripts/goal_lvl_2.gd" id="5_iywne"]
-[ext_resource type="Texture2D" uid="uid://dhsbd5g2unwp4" path="res://sprites/portal.png" id="6_u5sy4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -609,6 +608,13 @@ script = ExtResource("5_iywne")
 position = Vector2(1.25, 18)
 shape = SubResource("RectangleShape2D_p57ef")
 
+[node name="Spike" parent="." unique_id=1433471174 instance=ExtResource("6_p57ef")]
+position = Vector2(5263.9995, -303.99997)
+rotation = 1.5702187
+
+[node name="Spike2" parent="." unique_id=211358735 instance=ExtResource("6_p57ef")]
+position = Vector2(5488, -208.00002)
+rotation = -1.570627
 [node name="Sprite2D" type="Sprite2D" parent="Goal-lvl2" unique_id=1153769811]
 position = Vector2(0, 16)
 texture = ExtResource("6_u5sy4")
