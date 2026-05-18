@@ -21,3 +21,6 @@ text = "0"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1059048645]
 texture = ExtResource("2_g5y8c")
+
+[node name="Timer" type="Timer" parent="." unique_id=568011292]
+autostart = true
