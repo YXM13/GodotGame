@@ -5,6 +5,11 @@
 [ext_resource type="PackedScene" uid="uid://vojh1oqxksft" path="res://scenes/killzone.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://bn7g0s0xov5tn" path="res://scenes/goal_lvl_1.tscn" id="4_lbhrr"]
 [ext_resource type="Script" uid="uid://d343ogonn0f63" path="res://scripts/goal_lvl_2.gd" id="5_iywne"]
+<<<<<<< Updated upstream
+=======
+[ext_resource type="PackedScene" uid="uid://dkcy2hkfregqn" path="res://scenes/spike.tscn" id="6_p57ef"]
+[ext_resource type="Texture2D" uid="uid://dhsbd5g2unwp4" path="res://sprites/portal.png" id="6_u5sy4"]
+>>>>>>> Stashed changes
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -108,8 +113,7 @@ texture = ExtResource("2_yqjtg")
 10:8/0 = 0
 12:8/size_in_atlas = Vector2i(2, 1)
 12:8/0 = 0
-12:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -7.6471367, 16, -8.284399, 16, 7.3742085, 16, 2.5490456, -16, 4.4964676)
-12:8/0/physics_layer_0/polygon_0/one_way = true
+12:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -8.762346, 16, -8.762346, 16, 5.082161, -16, 5.082161)
 14:8/size_in_atlas = Vector2i(2, 1)
 14:8/0 = 0
 14:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -7.6471367, 16, -8.284399, 16, 7.3742085, 16, 2.6978798, -16, 4.4964676)
@@ -146,9 +150,6 @@ texture = ExtResource("2_yqjtg")
 16:10/size_in_atlas = Vector2i(2, 2)
 16:10/0 = 0
 16:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.93951, -15.93951, 15.93951, -16.041035, 15.837985, 16.041037, -15.93951, 15.93951)
-18:10/size_in_atlas = Vector2i(2, 2)
-18:10/0 = 0
-18:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.93951, -15.93951, 15.93951, -16.041035, 15.837985, 16.041037, -15.93951, 15.93951)
 20:10/size_in_atlas = Vector2i(2, 2)
 20:10/0 = 0
 20:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.93951, -15.93951, 15.93951, -16.041035, 15.837985, 16.041037, -15.93951, 15.93951)
@@ -286,8 +287,7 @@ texture = ExtResource("2_yqjtg")
 14:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.93951, -15.93951, 15.93951, -16.041035, 15.837985, 16.041037, -15.93951, 15.93951)
 16:16/size_in_atlas = Vector2i(2, 2)
 16:16/0 = 0
-16:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 7.3742085, 16, 2.6978798, -16, 4.4964676)
-16:16/0/physics_layer_0/polygon_0/one_way = true
+16:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 18:16/size_in_atlas = Vector2i(2, 2)
 18:16/0 = 0
 18:16/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.93951, -15.93951, 15.93951, -16.041035, 15.837985, 16.041037, -15.93951, 15.93951)
@@ -552,6 +552,9 @@ texture = ExtResource("2_yqjtg")
 26:30/0 = 0
 28:30/size_in_atlas = Vector2i(2, 2)
 28:30/0 = 0
+18:10/size_in_atlas = Vector2i(2, 2)
+18:10/0 = 0
+18:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.93951, -15.93951, 15.93951, -16.041035, 15.837985, 16.041037, -15.93951, 15.93951)
 
 [sub_resource type="TileSet" id="TileSet_lbhrr"]
 tile_size = Vector2i(32, 32)
@@ -620,5 +623,52 @@ position = Vector2(0, 16)
 texture = ExtResource("6_u5sy4")
 region_enabled = true
 region_rect = Rect2(22, 0, 22, 22)
+
+[node name="Spike" parent="." unique_id=1433471174 instance=ExtResource("6_p57ef")]
+position = Vector2(8271, 47)
+
+[node name="Spike2" parent="." unique_id=1197232656 instance=ExtResource("6_p57ef")]
+position = Vector2(8303, 47)
+
+[node name="Spike3" parent="." unique_id=231057732 instance=ExtResource("6_p57ef")]
+position = Vector2(8335, 47)
+
+[node name="Spike4" parent="." unique_id=1759277366 instance=ExtResource("6_p57ef")]
+position = Vector2(8367, 47)
+
+[node name="Spike5" parent="." unique_id=1447842169 instance=ExtResource("6_p57ef")]
+position = Vector2(8399, 47)
+
+[node name="Spike6" parent="." unique_id=2133391638 instance=ExtResource("6_p57ef")]
+position = Vector2(8592, -305)
+
+[node name="Spike7" parent="." unique_id=2038276690 instance=ExtResource("6_p57ef")]
+position = Vector2(8624, -305)
+
+[node name="Spike8" parent="." unique_id=312538578 instance=ExtResource("6_p57ef")]
+position = Vector2(8880, -17)
+
+[node name="Spike9" parent="." unique_id=178353735 instance=ExtResource("6_p57ef")]
+position = Vector2(8912, -17)
+
+[node name="Spike10" parent="." unique_id=482519465 instance=ExtResource("6_p57ef")]
+position = Vector2(9008, -241)
+
+[node name="Spike11" parent="." unique_id=803267559 instance=ExtResource("6_p57ef")]
+position = Vector2(9040, -241)
+
+[node name="Spike12" parent="." unique_id=1873899399 instance=ExtResource("6_p57ef")]
+position = Vector2(9073, -241)
+
+[node name="Spike13" parent="." unique_id=97615784 instance=ExtResource("6_p57ef")]
+position = Vector2(9105, -241)
+
+[node name="Spike14" parent="." unique_id=904494784 instance=ExtResource("6_p57ef")]
+position = Vector2(5520, -207)
+rotation = -1.572075
+
+[node name="Spike15" parent="." unique_id=468976149 instance=ExtResource("6_p57ef")]
+position = Vector2(5232, -303)
+rotation = 1.5712253
 
 [connection signal="body_entered" from="Goal-lvl2" to="Goal-lvl2" method="_on_body_entered"]

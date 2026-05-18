@@ -12,6 +12,8 @@ const MAX_FALL_SPEED = 2000.0
 
 var spawn_position = Vector2.ZERO
 
+var lives 
+
 func _physics_process(delta):
 	var input_dir = Input.get_axis("ui_left", "ui_right")
 
@@ -46,3 +48,4 @@ func _physics_process(delta):
 
 func _ready():
 	global_position = spawn_position
+	lives = 3

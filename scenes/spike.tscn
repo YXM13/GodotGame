@@ -1,7 +1,14 @@
+<<<<<<< Updated upstream
 [gd_scene format=3 uid="uid://gxtkcqldudhs"]
 
 [ext_resource type="Texture2D" uid="uid://br53w74o0g6tk" path="res://sprites/Tiny Platform Quest Tiles.png" id="1_7a7y0"]
 [ext_resource type="Script" uid="uid://mwdqxc2107f0" path="res://scripts/damagezone.gd" id="2_7a7y0"]
+=======
+[gd_scene format=3 uid="uid://dkcy2hkfregqn"]
+
+[ext_resource type="Texture2D" uid="uid://br53w74o0g6tk" path="res://sprites/Tiny Platform Quest Tiles.png" id="1_7a7y0"]
+[ext_resource type="Script" path="res://scripts/damagezone.gd" id="2_7a7y0"]
+>>>>>>> Stashed changes
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cx2lw"]
 atlas = ExtResource("1_7a7y0")
