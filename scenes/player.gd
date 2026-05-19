@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 const SPEED = 500.0
-const ACCELERATION = 5000.0
-const FRICTION = 8000.0
+const ACCELERATION = 3000.0
+const FRICTION = 6000.0
 
 const GRAVITY = 2000.0
 const JUMP_FORCE = -700.0
@@ -43,12 +43,7 @@ func _physics_process(delta):
 		if not is_on_floor():
 			accel *= AIR_CONTROL
 		
-		var target_speed = input_dir * SPEED
-
-		if sign(velocity.x) != sign(target_speed) and abs(velocity.x) > 10:
-			accel *= 2.5
-
-		velocity.x = move_toward(velocity.x, target_speed, accel * delta)
+		velocity.x = move_toward(velocity.x, input_dir * SPEED, accel * delta)
 	else:
 		var fric = FRICTION
 		if not is_on_floor():
@@ -56,10 +51,7 @@ func _physics_process(delta):
 		
 		velocity.x = move_toward(velocity.x, 0, fric * delta)
 
-	# Direction
+	# Direction / animatio
 	if input_dir != 0:
 		animated_sprite.flip_h = input_dir < 0
-		animated_sprite.play("walk")
-	
-
 	move_and_slide()
