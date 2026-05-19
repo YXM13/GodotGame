@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://gxtkcqldudhs"]
+[gd_scene format=3 uid="uid://dkcy2hkfregqn"]
 
 [ext_resource type="Texture2D" uid="uid://br53w74o0g6tk" path="res://sprites/Tiny Platform Quest Tiles.png" id="1_7a7y0"]
-[ext_resource type="Script" uid="uid://mwdqxc2107f0" path="res://scripts/damagezone.gd" id="2_7a7y0"]
+[ext_resource type="Script" uid="uid://bl7rh1l266s3x" path="res://scripts/hurtzone.gd" id="2_d2mqm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cx2lw"]
 atlas = ExtResource("1_7a7y0")
@@ -25,21 +25,22 @@ animations = [{
 "speed": 4.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2mqm"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7a7y0"]
 size = Vector2(32, 32)
 
-[node name="Spike" type="Node2D" unique_id=1433471174]
+[node name="Spike" type="Node2D" unique_id=1878331124]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1540823757]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=416895357]
 sprite_frames = SubResource("SpriteFrames_b8th5")
 autoplay = "default"
-frame_progress = 0.6032864
+frame = 1
+frame_progress = 0.21601607
 
-[node name="Damagezone" type="Area2D" parent="." unique_id=1946351245]
+[node name="Hurtzone" type="Area2D" parent="." unique_id=1626116543]
 collision_mask = 2
-script = ExtResource("2_7a7y0")
+script = ExtResource("2_d2mqm")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Damagezone" unique_id=1809077530]
-shape = SubResource("RectangleShape2D_d2mqm")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtzone" unique_id=1666392224]
+shape = SubResource("RectangleShape2D_7a7y0")
 
-[connection signal="body_entered" from="Damagezone" to="Damagezone" method="_on_body_entered"]
+[connection signal="body_entered" from="Hurtzone" to="Hurtzone" method="_on_body_entered"]
