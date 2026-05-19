@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://5e8jn0qulv3c"]
 
-[ext_resource type="AudioStream" uid="uid://br2qp3dxmctu" path="res://xtremefreddy-game-music-loop-7-145285.mp3" id="1_nbeep"]
+[ext_resource type="AudioStream" uid="uid://br2qp3dxmctu" path="res://audio/xtremefreddy-game-music-loop-7-145285.mp3" id="1_nbeep"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=280450821]
 stream = ExtResource("1_nbeep")
