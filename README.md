@@ -52,6 +52,6 @@ The player controls a knight in a side-scrolling platformer level. The level is 
 
 ## Project Status
 
-The game currently has a playable level with movement, hazards, goal zones, and respawning. More levels, enemies, animations, sounds, and menus may be added later.
+The game currently has a playable level with movement, hazards, goal zones and respawning. More levels, enemies, animations, sounds, and menus may be added later.
 
 ---
