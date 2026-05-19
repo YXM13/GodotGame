@@ -47,8 +47,7 @@ The player controls a knight in a side-scrolling platformer level. The level is 
 ## Screenshots
 
 <!-- Replace these paths with your actual screenshot file names. -->
-![Game Screenshot.png](sprites/Game%20Screenshot.png)
----
+![Game screenshot](sprites/game-screenshot.png)---
 
 ## Project Status
 
