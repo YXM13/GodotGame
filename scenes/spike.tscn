@@ -1,3 +1,11 @@
+<<<<<<< Updated upstream
 [gd_scene format=3 uid="uid://gxtkcqldudhs"]
 
 [node name="Spike" type="Node2D" unique_id=1878331124]
+=======
+[gd_scene format=3 uid="uid://dkcy2hkfregqn"]
+
+[node name="Spike" type="Node2D" unique_id=1878331124]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1712188654]
+>>>>>>> Stashed changes

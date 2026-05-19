@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="tiles"
+config/name="Godot-game"
 run/main_scene="uid://bkr1s28nrk1cn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
