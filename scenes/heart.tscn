@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://2nt1od8h3gci"]
+
+[ext_resource type="FontFile" path="res://assets/PIXEL FONTS PACK 6 by Mikiz/runescape_uf/runescape_uf.ttf" id="1_ycbwg"]
+[ext_resource type="Texture2D" path="res://sprites/timer (32x32).png" id="2_krgnv"]
+[ext_resource type="Script" path="res://scenes/timer.gd" id="3_krgnv"]
+
+[node name="Timer" type="Control" unique_id=1983209352]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="." unique_id=1703347349]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -15.0
+offset_right = 67.0
+offset_bottom = 18.0
+theme_override_fonts/font = ExtResource("1_ycbwg")
+theme_override_font_sizes/font_size = 32
+text = "0"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1059048645]
+texture = ExtResource("2_krgnv")
+
+[node name="Timer" type="Timer" parent="." unique_id=738475774]
+script = ExtResource("3_krgnv")
