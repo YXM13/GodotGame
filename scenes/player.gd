@@ -10,7 +10,7 @@ const JUMP_FORCE = -700.0
 const AIR_CONTROL = 1.2
 const MAX_FALL_SPEED = 2000.0
 
-var spawn_position = Vector2.ZERO
+var spawn_position = Vector2(7830, -50)
 var lives 
 var collectedCoins
 var time
