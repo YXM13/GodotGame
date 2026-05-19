@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://brxn8py5pcp0w"]
 
 [ext_resource type="Texture2D" uid="uid://ci7h4k5nticlv" path="res://sprites/Tiny Platform Quest Characters.png" id="1_4flbx"]
-[ext_resource type="Script" uid="uid://cxiefwwfe2qto" path="res://scenes/player.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://cxiefwwfe2qto" path="res://scripts/player.gd" id="1_g2els"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
 atlas = ExtResource("1_4flbx")

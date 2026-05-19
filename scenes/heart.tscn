@@ -1,16 +1,14 @@
 [gd_scene format=3 uid="uid://bebf43jcphvu8"]
 
+[ext_resource type="Script" uid="uid://dyk6k7v7wse8v" path="res://scenes/heart.gd" id="1_ycbwg"]
 [ext_resource type="Texture2D" uid="uid://bvw7eoflgmdb8" path="res://sprites/heart (32x32).png" id="2_krgnv"]
-[ext_resource type="Script" path="res://scenes/timer.gd" id="3_krgnv"]
 
 [node name="heart" type="Control" unique_id=1983209352]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-
-[node name="Timer" type="Timer" parent="." unique_id=738475774]
-script = ExtResource("3_krgnv")
+script = ExtResource("1_ycbwg")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1065991153]
 layout_mode = 0

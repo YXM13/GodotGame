@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+signal lives_changed(new_lives)
+
 const SPEED = 500.0
 const ACCELERATION = 5000.0
 const FRICTION = 8000.0
@@ -17,8 +19,10 @@ var time
 @onready var animated_sprite = $AnimatedSprite2D
 
 func _ready():
+	add_to_group("player")
 	global_position = spawn_position
 	lives = 1
+	lives_changed.emit(lives)
 	collectedCoins = 0
 
 func _physics_process(delta):
@@ -61,3 +65,10 @@ func _physics_process(delta):
 		animated_sprite.flip_h = input_dir < 0
 		
 	move_and_slide()
+
+func set_lives(amount):
+	lives = amount
+	lives_changed.emit(lives)
+
+func lose_life():
+	set_lives(lives - 1)

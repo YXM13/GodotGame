@@ -16,7 +16,7 @@ func stop_timer():
 	print("Time to beat the game: ", format_time(time))
 
 func format_time(x) -> String:
-	var minutes := int(x) / 60
+	var minutes := int(x / 60)
 	var seconds := int(x) % 60
 	var milliseconds := int((x - int(x)) * 100)
 	return "%02d:%02d.%02d" % [minutes, seconds, milliseconds]
