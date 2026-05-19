@@ -2,7 +2,7 @@
 
 **Adventure: The Brave Knight** is a 2D platformer made in Godot for the course **DD1349**.
 
-Play as a brave knight and make your way through ruins, floating platforms, pits, spikes, and goal zones. The game is inspired by classic platformers like **Mario**, with some darker adventure-platformer inspiration from **Hollow Knight**.
+Play as a brave knight and make your way through ruins, floating platforms, pits, spikes, and goal zones. The game is inspired by classic platformers like Mario, with some darker adventure-platformer inspiration from Hollow Knight.
 
 
 ---
