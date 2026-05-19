@@ -1,16 +1,18 @@
 [gd_scene format=3 uid="uid://bkr1s28nrk1cn"]
 
 [ext_resource type="PackedScene" uid="uid://brxn8py5pcp0w" path="res://scenes/player.tscn" id="1_uwrxv"]
-[ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_vtaks"]
+[ext_resource type="Script" uid="uid://cdt6xr5f4xet7" path="res://scripts/game_manager.gd" id="1_vtaks"]
 [ext_resource type="Texture2D" uid="uid://br53w74o0g6tk" path="res://sprites/Tiny Platform Quest Tiles.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://vojh1oqxksft" path="res://scenes/killzone.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://bn7g0s0xov5tn" path="res://scenes/goal_lvl_1.tscn" id="4_lbhrr"]
 [ext_resource type="Script" uid="uid://d343ogonn0f63" path="res://scripts/goal_lvl_2.gd" id="5_iywne"]
 [ext_resource type="Texture2D" uid="uid://dhsbd5g2unwp4" path="res://sprites/portal.png" id="6_u5sy4"]
-[ext_resource type="PackedScene" path="res://scenes/spike.tscn" id="7_u5sy4"]
-[ext_resource type="PackedScene" path="res://scenes/coin.tscn" id="8_gee14"]
-[ext_resource type="PackedScene" path="res://scenes/moving_platform.tscn" id="9_0tnpc"]
-[ext_resource type="PackedScene" path="res://scenes/goal_lvl_3.tscn" id="10_kvpfn"]
+[ext_resource type="PackedScene" uid="uid://dkcy2hkfregqn" path="res://scenes/spike.tscn" id="7_u5sy4"]
+[ext_resource type="PackedScene" uid="uid://dq0pgqivq5avv" path="res://scenes/coin.tscn" id="8_gee14"]
+[ext_resource type="PackedScene" uid="uid://b67bqf0prseoi" path="res://scenes/moving_platform.tscn" id="9_0tnpc"]
+[ext_resource type="PackedScene" uid="uid://cuhw6rd587g1l" path="res://scenes/goal_lvl_3.tscn" id="10_kvpfn"]
+[ext_resource type="PackedScene" uid="uid://2nt1od8h3gci" path="res://scenes/timer.tscn" id="12_dinhu"]
+[ext_resource type="PackedScene" uid="uid://bebf43jcphvu8" path="res://scenes/heart.tscn" id="13_kvuet"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gee14"]
 texture = ExtResource("2_yqjtg")
@@ -734,5 +736,28 @@ rotation = -1.5760113
 
 [node name="goal-lvl3" parent="." unique_id=1062281957 instance=ExtResource("10_kvpfn")]
 position = Vector2(9904, -208)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1452260081]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=2096899838]
+layout_mode = 3
+anchor_left = 0.023
+anchor_top = 0.023
+anchor_right = 0.023
+anchor_bottom = 0.023
+offset_right = 102.0
+offset_bottom = 54.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control" unique_id=704469688]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 50
+
+[node name="Timer" parent="CanvasLayer/Control/VBoxContainer" unique_id=1983209352 instance=ExtResource("12_dinhu")]
+layout_mode = 2
+
+[node name="heart" parent="CanvasLayer/Control/VBoxContainer" unique_id=397690020 instance=ExtResource("13_kvuet")]
+layout_mode = 2
 
 [connection signal="body_entered" from="Goal-lvl2" to="Goal-lvl2" method="_on_body_entered"]

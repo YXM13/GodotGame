@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://bebf43jcphvu8"]
+[gd_scene format=3 uid="uid://2nt1od8h3gci"]
 
-[ext_resource type="Texture2D" uid="uid://bvw7eoflgmdb8" path="res://sprites/heart (32x32).png" id="2_krgnv"]
+[ext_resource type="Texture2D" uid="uid://b7q7dopc4xsmr" path="res://sprites/timer (32x32).png" id="2_krgnv"]
 [ext_resource type="Script" path="res://scenes/timer.gd" id="3_krgnv"]
 
-[node name="heart" type="Control" unique_id=1983209352]
+[node name="Timer" type="Control" unique_id=1983209352]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -16,7 +16,6 @@ script = ExtResource("3_krgnv")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-theme_override_constants/separation = 4
 
 [node name="TextureRect" type="TextureRect" parent="HBoxContainer" unique_id=460673803]
 layout_mode = 2
