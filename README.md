@@ -9,7 +9,6 @@ Play as a brave knight and make your way through ruins, floating platforms, pits
 
 # Gameplay
 
-.
 The player controls a knight in a side-scrolling platformer level. The level is built with TileMaps and contains stone ruins, grassy platforms, spike traps, kill zones, and goal points. The movement is designed to feel responsive, with acceleration, friction, gravity, jumping, and variable jump height. Missing a jump or touching a dangerous area resets the player back to the latest spawn point.
 ---
 
