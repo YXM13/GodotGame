@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b67bqf0prseoi"]
+
+[ext_resource type="Texture2D" uid="uid://br53w74o0g6tk" path="res://sprites/Tiny Platform Quest Tiles.png" id="1_ms375"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1tdcd"]
+size = Vector2(32, 16)
+
+[node name="MovingPlatform" type="AnimatableBody2D" unique_id=916695647]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=356503879]
+texture = ExtResource("1_ms375")
+region_enabled = true
+region_rect = Rect2(256, 128, 32, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1550069911]
+shape = SubResource("RectangleShape2D_1tdcd")

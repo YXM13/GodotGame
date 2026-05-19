@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dq0pgqivq5avv"]
+
+[ext_resource type="Script" uid="uid://bf187vg36mtpo" path="res://scripts/coin.gd" id="1_11l1o"]
+[ext_resource type="Texture2D" uid="uid://br53w74o0g6tk" path="res://sprites/Tiny Platform Quest Tiles.png" id="1_i64fm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d14el"]
+atlas = ExtResource("1_i64fm")
+region = Rect2(288, 416, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1ikuy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d14el")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wnlwo"]
+radius = 8.0
+
+[node name="Coin" type="Area2D" unique_id=1342898029]
+collision_mask = 2
+script = ExtResource("1_11l1o")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=945125960]
+sprite_frames = SubResource("SpriteFrames_1ikuy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=628470503]
+position = Vector2(1, 9)
+shape = SubResource("CircleShape2D_wnlwo")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

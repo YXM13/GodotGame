@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cuhw6rd587g1l"]
+
+[ext_resource type="Script" uid="uid://csua6nqnuc6rt" path="res://scripts/goal_lvl_3.gd" id="1_fsjug"]
+[ext_resource type="Texture2D" uid="uid://dhsbd5g2unwp4" path="res://sprites/portal.png" id="2_jltf0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ujc6e"]
+radius = 12.0
+
+[node name="goal-lvl3" type="Area2D" unique_id=1062281957]
+collision_mask = 2
+script = ExtResource("1_fsjug")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1202906586]
+shape = SubResource("CircleShape2D_ujc6e")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1906975321]
+texture = ExtResource("2_jltf0")
+region_enabled = true
+region_rect = Rect2(22, 0, 22, 22)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -2,15 +2,18 @@ extends CharacterBody2D
 
 const SPEED = 500.0
 const ACCELERATION = 3000.0
-const FRICTION = 4000.0
+const FRICTION = 6000.0
 
 const GRAVITY = 2000.0
 const JUMP_FORCE = -700.0
 
-const AIR_CONTROL = 1
+const AIR_CONTROL = 1.2
 const MAX_FALL_SPEED = 2000.0
 
 var spawn_position = Vector2.ZERO
+var lives 
+var collectedCoins
+var time
 
 func _physics_process(delta):
 	var input_dir = Input.get_axis("ui_left", "ui_right")
@@ -46,3 +49,5 @@ func _physics_process(delta):
 
 func _ready():
 	global_position = spawn_position
+	lives = 1
+	collectedCoins = 0
