@@ -19,6 +19,13 @@ config/icon="res://icon.svg"
 
 GameManager="*uid://cdt6xr5f4xet7"
 
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+
 [editor]
 
 version_control/autoload_on_startup=true

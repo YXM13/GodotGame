@@ -6,6 +6,7 @@ var firstLevelTime
 var secondLevelTime
 var thirdLevelTime
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if timer_running:
@@ -14,6 +15,8 @@ func _process(delta: float) -> void:
 func stop_timer():
 	timer_running = false
 	print("Time to beat the game: ", format_time(time))
+	
+	
 
 func format_time(x) -> String:
 	var minutes := int(x / 60)

@@ -12,7 +12,9 @@
 [ext_resource type="PackedScene" uid="uid://b67bqf0prseoi" path="res://scenes/moving_platform.tscn" id="9_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://cuhw6rd587g1l" path="res://scenes/goal_lvl_3.tscn" id="10_kvpfn"]
 [ext_resource type="PackedScene" uid="uid://2nt1od8h3gci" path="res://scenes/timer.tscn" id="12_dinhu"]
+[ext_resource type="Script" uid="uid://df6urpjlseul3" path="res://scripts/coincounter.gd" id="12_ir15t"]
 [ext_resource type="PackedScene" uid="uid://bebf43jcphvu8" path="res://scenes/heart.tscn" id="13_kvuet"]
+[ext_resource type="PackedScene" uid="uid://bv0bsnf8yrw68" path="res://scenes/coincounter.tscn" id="15_ca42v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gee14"]
 texture = ExtResource("2_yqjtg")
@@ -753,11 +755,15 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 theme_override_constants/separation = 50
+script = ExtResource("12_ir15t")
 
 [node name="Timer" parent="CanvasLayer/Control/VBoxContainer" unique_id=1983209352 instance=ExtResource("12_dinhu")]
 layout_mode = 2
 
 [node name="heart" parent="CanvasLayer/Control/VBoxContainer" unique_id=397690020 instance=ExtResource("13_kvuet")]
+layout_mode = 2
+
+[node name="coincounter" parent="CanvasLayer/Control/VBoxContainer" unique_id=1800614106 instance=ExtResource("15_ca42v")]
 layout_mode = 2
 
 [connection signal="body_entered" from="Goal-lvl2" to="Goal-lvl2" method="_on_body_entered"]

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bv0bsnf8yrw68"]
+
+[ext_resource type="Script" uid="uid://df6urpjlseul3" path="res://scripts/coincounter.gd" id="1_bni0g"]
+[ext_resource type="Texture2D" uid="uid://cj0qwtiljbc8w" path="res://sprites/coin_ui_tight.png" id="2_y58xf"]
+
+[node name="coincounter" type="Control" unique_id=1983209352]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_bni0g")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1065991153]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 4
+
+[node name="CoinIcon" type="TextureRect" parent="HBoxContainer" unique_id=460673803]
+layout_mode = 2
+texture = ExtResource("2_y58xf")
+
+[node name="CoinLabel" type="Label" parent="HBoxContainer" unique_id=1703347349]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "0/1"

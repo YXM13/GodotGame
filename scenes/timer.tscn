@@ -10,8 +10,6 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("3_krgnv")
 
-[node name="Timer" type="Timer" parent="." unique_id=738475774]
-
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1065991153]
 layout_mode = 0
 offset_right = 40.0
