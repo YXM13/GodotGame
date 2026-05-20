@@ -2,9 +2,9 @@ extends Node
 
 var time := 0.0
 var timer_running := true
-var firstLevelTime 
-var secondLevelTime
-var thirdLevelTime
+var firstLevelTime: float = 0.0 
+var secondLevelTime: float = 0.0 
+var thirdLevelTime: float = 0.0 
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
