@@ -8,6 +8,7 @@ func _on_body_entered(body: Node2D) -> void:
 		print("Ok ok you beat lvl 2. That's something at least")
 		body.spawn_position = Vector2(7830, -50)
 		body.position = body.spawn_position
+		body.lives = 3
 		body.collectedCoins = 0	
 		get_tree().current_scene.get_node("CanvasLayer/Control/VBoxContainer/coincounter").update_coin_count(0)
 
