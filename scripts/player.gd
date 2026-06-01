@@ -21,7 +21,7 @@ var time
 func _ready():
 	add_to_group("player")
 	global_position = spawn_position
-	lives = 1
+	lives = 3
 	lives_changed.emit(lives)
 	collectedCoins = 0
 
