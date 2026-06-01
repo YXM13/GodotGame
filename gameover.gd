@@ -1,7 +1,9 @@
 extends CanvasLayer
 
-
 # Called when the node enters the scene tree for the first time.
+func _on_tree_entered() -> void:
+	$finalTime.text = "Final time: " + str(GameManager.format_time(GameManager.time))
+
 func _on_play_again_pressed():
 	GameManager.reset_timer()
 	GameManager.start_timer()

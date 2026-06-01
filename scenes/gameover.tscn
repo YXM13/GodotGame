@@ -1,6 +1,11 @@
 [gd_scene format=3 uid="uid://bpxyxrp67dk80"]
 
 [ext_resource type="Script" uid="uid://scgkhnyb2qsn" path="res://gameover.gd" id="1_ncp31"]
+[ext_resource type="FontFile" uid="uid://biiak6ju1dw4o" path="res://sprites/Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/montreal/Montreal-Bold.ttf" id="2_dy3ie"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ncp31"]
+font = ExtResource("2_dy3ie")
+font_size = 100
 
 [node name="gameover" type="CanvasLayer" unique_id=733529158]
 script = ExtResource("1_ncp31")
@@ -35,5 +40,19 @@ grow_vertical = 2
 text = "Play Again
 "
 
+[node name="finalTime" type="Label" parent="." unique_id=1274387403]
+anchors_preset = -1
+anchor_left = 0.15100001
+anchor_top = 0.093
+anchor_right = 0.15100001
+anchor_bottom = 0.093
+offset_left = -0.28001404
+offset_top = 0.040000916
+offset_right = 922.72
+offset_bottom = 147.04001
+label_settings = SubResource("LabelSettings_ncp31")
+horizontal_alignment = 1
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="play again" to="." method="_on_play_again_pressed"]
