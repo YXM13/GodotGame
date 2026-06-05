@@ -770,4 +770,19 @@ layout_mode = 2
 [node name="Enemy" parent="." unique_id=147476310 instance=ExtResource("16_ca42v")]
 position = Vector2(172, -13)
 
+[node name="Enemy2" parent="." unique_id=1808768055 instance=ExtResource("16_ca42v")]
+position = Vector2(2291, -237)
+
+[node name="Enemy3" parent="." unique_id=1954519520 instance=ExtResource("16_ca42v")]
+position = Vector2(5257, -109)
+
+[node name="Enemy4" parent="." unique_id=236982242 instance=ExtResource("16_ca42v")]
+position = Vector2(9134, -396)
+
+[node name="Enemy5" parent="." unique_id=1859202710 instance=ExtResource("16_ca42v")]
+position = Vector2(9422, -77)
+
+[node name="Enemy6" parent="." unique_id=1299458412 instance=ExtResource("16_ca42v")]
+position = Vector2(8344, -173)
+
 [connection signal="body_entered" from="Goal-lvl2" to="Goal-lvl2" method="_on_body_entered"]
