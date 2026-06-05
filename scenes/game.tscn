@@ -768,6 +768,6 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Enemy" parent="." unique_id=147476310 instance=ExtResource("16_ca42v")]
-position = Vector2(172, -17)
+position = Vector2(172, -13)
 
 [connection signal="body_entered" from="Goal-lvl2" to="Goal-lvl2" method="_on_body_entered"]
